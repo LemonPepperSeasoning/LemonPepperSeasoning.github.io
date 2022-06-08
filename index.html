@@ -2,90 +2,825 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Takahiro.I</title>
-  <link rel="icon" type="image/jpeg" href="img/lemonpepper.jpeg" sizes="32x32">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takahiro Ishiguro</title>
 
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/lemonpepper.jpeg" type="image/x-icon">
 
-  <meta name="description"
-    content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Takahiro Ishiguro"/>
-  
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
+<body>
 
-<body class="center">
+  <!--
+    - #MAIN
+  -->
 
-  <div class="row">
+  <main>
 
-    <!-- Profile block -->
-    <div id="profile" class="column container centers">
+    <!--
+      - #SIDEBAR
+    -->
 
-        <div class="ppic">
-          <img class="centers" src="./img/portrait.jpg" />
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="avatar-image" src="./assets/images/portrait.jpg" alt="Takahiro Ishiguro" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Takahiro Ishiguro">Takahiro Ishiguro</h1>
+
+          <p class="title">Software Engineer</p>
         </div>
 
-        <h3>Takahiro Ishiguro</h3>
-        <h5>I am interested in building Intelligent systems</h5>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-        <div id="locationimg" class="location">
-          <img src="img/location-dot-solid.svg" /> Auckland, New Zealand
-        </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
-        <div class="socialmedia">
-          <a href="https://www.linkedin.com/in/takahiro01" class="icons filter-white" id="linkedin">
-            <img src="img/linkedid-logo.png"/>
-          </a>
+      </div>
 
-          <a href="https://github.com/LemonPepperSeasoning" class="icons" id="github">
-            <img src="img/github-brands.svg" />
-          </a>
+      <div class="sidebar-info_more">
 
-          <a href="https://lemonpepperseasoning.github.io/" class="icons" id="website">
-            <img src="img/globe-solid.svg" />
-          </a>
+        <div class="separator"></div>
 
-          <a href="" class="icons" id="resume">
-            <img src="img/file-solid.svg" />
-          </a>
-          
-          <address class="icons" id="email">
-            <a href="mailto:takahiro.swe@gmail.com">
-              <img src="img/envelope-solid.svg" />
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:takahiro.swe@gmail.com" class="contact-link">takahiro.swe@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+64274397792" class="contact-link">+64 (27) 439-7792</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-06-2">June 29, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Auckland, New Zealand</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/takahiro01/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-          </address>
-          
-        </div>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/LemonPepperSeasoning" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/_takahiro___" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a fourth & final year software engineering student, studying at University of Auckland.
+            I love problem solving and passionate about building an inteligent system.
+          </p>
+
+          <p>
+            I enjoy being challenged on a regular basis, and am highly motivated to solve real-life problems using modern technology. I have developed many skills such as problem-solving ability through my past internships, including programming and Java skill set. My eventual goal is to become professional software engineer with great determination to succeed while contributing to the society
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Deepfake system</h4>
+
+                <p class="service-item-text">
+                  Currently researching & developing cutting-edge talking face generation system.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Algoirthmic Trading System</h4>
+
+                <p class="service-item-text">
+                  Trying my best to beat the market :)
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I take photos.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title-company">ASB Bank</h4>
+              <h4 class="h4 timeline-item-title">Technology Intern (Software & Data science)</h4>
+
+              <span>Dec 2021 — Mar 2022</span>
+
+              <p class="timeline-text">
+                Worked on the development of Data-Monitoring System. <br>
+                Tools & Frameworks: Python, Azure, Databricks, Snowflake.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title-company">Stream-line IT</h4>
+              <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+
+              <span>Jan 2021 — May 2015</span>
+
+              <p class="timeline-text">
+                Managing tasks via agile project management methodology and tools<br>
+                Front-end and Backend development using the following technology.(React, NodeJS, Express, MySQL, MongoDb)<br>
+                Deployed and maintained infrastructures on AWS (lambda, RDS, EC2, CloudFront, CloudWatch, API gateway etc) <br>
+                Automated infrastructure deployment with AWS CloudFormation.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              
+              <h4 class="h4 timeline-item-title-company">Robotics Lab, University of Auckland</h4>
+              <h4 class="h4 timeline-item-title">Summer Researcher</h4>
+
+              <span>Nov 2020 — Mar 2021</span>
+
+              <p class="timeline-text">
+                Worked on the development of Social Navigation system for Silbot3 robot.<br>
+                Used Depth Sense camera (intel RealSense camera) to detect and track human.<br>
+                Used ROS to navigate robot. <br>
+                Tools and Frameworks : python, c++, realsenseSDK, nuitrackSDK, linux, ROS.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title-company">The University of Auckland</h4>
+
+              <span>Feb 2019 — Nov 2022 (Expected)</span>
+
+              <p class="timeline-text">
+                Bachelor of Engineering, specialising in Software. <br>
+                Electives forcus on Artifical Intelligence, Data structures & Algorithms and Operating systems.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <p class="skills-p">
+            Python, Java, C, Swift, Linux, MacOS, AWS, Azure, Snowflake, Databricks <br>
+            Pytorch, Android, IOS <br>
+            More to come!
+          </p>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Projects
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Intelligent system</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile application</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Intelligent systemn</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile application</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="intelligent system">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-palmtree.png" alt="plam-tree" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Palm tree</h3>
+                <p class="project-category">Cryptocurrency trading bot</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile application">
+              <a href="https://github.com/LemonPepperSeasoning/Stockly">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-stockly.png" alt="Stockly" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Stockly</h3>
+                <p class="project-category">Android app</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+   
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12770.877568799204!2d174.757433884165!3d-36.84919592743923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb48a99ab9%3A0x500ef6143a2b3e0!2sAuckland%20CBD%2C%20Auckland!5e0!3m2!1sen!2snz!4v1654673589169!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
 
     </div>
 
-      
-    <div id="about-me" class="column container centers">
-      
-      <br/>
-      <br/>
-      <br/>
-
-      <h4>About me</h4>
-      <h6>
-        I am a final year software engineering student, studying at The University of Auckland. 
-        <br/>
-        <br/>
-        I am looking for Software Engineering job!
-      </h6>
-
-    </div>
-  </div>
+  </main>
 
 
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
