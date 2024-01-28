@@ -131,3 +131,7 @@ dmypy.json
 
 # MAc
 .DS_Store
+.next/
+node_modules/
+
+
