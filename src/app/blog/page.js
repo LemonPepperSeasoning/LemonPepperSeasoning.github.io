@@ -10,7 +10,7 @@ export default function Blog() {
                 <div className="max-w-lg text-sm">
                     <NavBar />
                     <h1 className="w-screen">Blog Page</h1>
-                    <p>TBD</p>
+                    <p>TBD ...</p>
                 </div>
             </main>
         </RootLayout>
