@@ -8,7 +8,7 @@ export default function Work() {
       <main className={`flex min-h-screen justify-center p-8 ${libre_baskerville.className}`}>
         <div className="max-w-lg text-sm">
           <NavBar />
-          <h1 className="w-screen">Work Page</h1>
+          <h1>Work Page</h1>
           <p>TBD</p>
         </div>
       </main>
