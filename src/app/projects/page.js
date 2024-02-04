@@ -9,7 +9,7 @@ export default function Projects() {
       <main className={`flex min-h-screen justify-center p-8 ${libre_baskerville.className}`}>
         <div className="max-w-lg text-sm">
           <NavBar />
-          <h1 className="w-screen">Projects Page</h1>
+          <h1>Projects Page</h1>
           <p>TBD</p>
         </div>
       </main>
