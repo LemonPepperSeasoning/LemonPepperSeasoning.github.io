@@ -7,10 +7,6 @@ export default function NavBar() {
       </div>
 
       <div className="pr-6">
-        <a href='/work'>work</a>
-      </div>
-
-      <div className="pr-6">
         <a href='/projects'>projects</a>
       </div>
 

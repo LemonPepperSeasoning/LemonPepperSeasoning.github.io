@@ -1,6 +1,8 @@
 import { Libre_Baskerville, Racing_Sans_One } from 'next/font/google';
 import RootLayout from './layout';
 import NavBar from './components/navBar';
+import Footer from "./components/footer";
+
 
 // If loading a variable font, you don't need to specify the font weight
 export const libre_baskerville = Libre_Baskerville({
@@ -121,9 +123,7 @@ export default function Home() {
               className="object-cover w-60 rounded-lg mb-2"
             />
           </div>
-
         </div >
-
       </main >
     </RootLayout>
   );
