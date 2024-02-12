@@ -43,9 +43,8 @@ export default function Projects() {
       <main className={`flex min-h-screen justify-center p5-8 p-8 ${libre_baskerville.className}`}>
         <div className="max-w-lg text-sm">
           <NavBar />
-          <h1>Project list</h1>
 
-          <ul role="list" class="justify-center flex-1 max-w-4xl px-4 py-4 mx-auto text-left lg:py-10 ">
+          <ul role="list" class="justify-center flex-1 max-w-4xl text-left">
             {projectList.map((project) => (
               <li key={project.title}>
                 <a href={project.link} class="grid grid-cols-1 mb-6 md:grid-cols-[70%,1fr] border-gray-200 border-b dark:border-gray-700 pb-6 gap-4" >
