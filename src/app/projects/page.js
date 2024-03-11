@@ -4,6 +4,14 @@ import { libre_baskerville } from "../page";
 
 const projectList = [
   {
+    link: "https://github.com/LemonPepperSeasoning/neural-network-from-scratch",
+    title: "Neural netowrk from Scratch with Rust",
+    description: "Implemented a neural network from scracth using Rust. More specifically, Multi-Layer Perceptron (MLP).",
+    img: "/static/img/projects/project-neural-network.png",
+    date: "11th march, 2024",
+    tag: "Neural Network"
+  },
+  {
     link: "#",
     title: "Palm Tree: Algorithmic trading bot",
     description: "Using secret magic to beat the market.",
