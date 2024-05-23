@@ -35,7 +35,7 @@ export default function Home() {
               I'm a Software Engineer, currently living in Tokyo, Japan.
             </p>
             <p>
-              I'm interested in Backend, Robotics & AI.
+              I'm interested in Robotics & AI.
             </p>
           </div>
 
