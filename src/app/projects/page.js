@@ -55,7 +55,7 @@ export default function Projects() {
           <ul role="list" class="justify-center flex-1 max-w-4xl text-left">
             {projectList.map((project) => (
               <li key={project.title}>
-                <a href={project.link} class="grid grid-cols-1 mb-6 md:grid-cols-[70%,1fr] border-gray-200 border-b dark:border-gray-700 pb-6 gap-4" >
+                <a href={project.link} className="grid grid-cols-1 mb-6 md:grid-cols-[70%,1fr] border-gray-200 border-b dark:border-gray-700 rounded p-5 gap-4 hover:bg-gray-200" >
                   <div>
                     <h2 class="mt-1 mb-3 text-xl font-semibold">
                       {project.title}
