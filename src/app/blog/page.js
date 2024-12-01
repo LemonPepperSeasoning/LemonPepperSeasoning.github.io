@@ -4,6 +4,10 @@ import { libre_baskerville } from "../page";
 
 const blogs = [
   {
+    title: "Finding sha256 collision",
+    description: "I read the algorithm & thought about it. It's impossible ... afaik."
+  },
+  {
     title: "My first Rust project",
     description: `This weekend, I decided to dive into the Rust programming language, fueled by curiosity and the desire to learn something new.
     Conveniently, my workplace had an internal learning session on neural networks, sparking an idea to implement one from scratch using Rust.
